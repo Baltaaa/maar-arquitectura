@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for design tokens */
+:root {
+  --color-bg:      #F5F3EF;
+  --color-text:    #0A0A0A;
+  --color-muted:   #6B6B6B;
+  --color-accent:  #0A0A0A;
+  --color-border:  #E2DED8;
+  --color-surface: #EDEBE6;
+  --color-dark:    #0A0A0A;
+  --color-dark-2:  #111111;
+}
+
+/* Typography base */
+html {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Remove default scrollbar behavior */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Terminal-style border utility */
+.terminal-border {
+  border: 1px solid var(--color-border);
+}
+
+.terminal-border-active {
+  border: 1px solid var(--color-accent);
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Prevent layout shift with scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Image lazy loading */
+img[loading="lazy"] {
+  background: linear-gradient(
+    90deg,
+    var(--color-border) 0%,
+    var(--color-border) 45%,
+    #ccc8c2 45%,
+    #ccc8c2 55%,
+    var(--color-border) 55%,
+    var(--color-border) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
