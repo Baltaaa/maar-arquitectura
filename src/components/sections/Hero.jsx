@@ -7,7 +7,7 @@ export const Hero = () => {
   }
 
   return (
-    <section className="relative h-[90vh] md:h-screen min-h-[300px] max-h-[750px] flex flex-col justify-end overflow-hidden md:m-16 md:mb-10 md:mt-0 p-1 rounded-t-md md:rounded-md md:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.5)]">
+    <section className="relative select-none h-[90vh] md:h-screen min-h-[300px] max-h-[750px] flex flex-col justify-end overflow-hidden md:m-16 md:mb-10 md:mt-0 p-1 rounded-t-md md:rounded-md md:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.5)]">
 
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">
@@ -72,16 +72,16 @@ export const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           onClick={scrollToNext}
-          className="flex items-center gap-3 group cursor-pointer"
+          className="flex items-center gap-3 group cursor-pointer bg-slate-100/70 md:bg-[#010101]/50 px-8 py-4 rounded-full backdrop-blur-sm md:shadow-[10px_10px_100px_-10px_rgba(245,243,239,0.5)]"
         >
-          <span className="text-white/50 text-[11px] uppercase tracking-[0.18em] font-sans
-                           group-hover:text-white/80 transition-colors duration-300">
+          <span className="text-[#010101]/50 md:text-white/50 text-[11px] uppercase tracking-[0.18em] font-sans
+                           group-hover:text-[#010101]/80 md:group-hover:text-white/80 transition-colors duration-300">
             {siteContent.hero.scrollLabel}
           </span>
           <motion.span
             animate={{ y: [0, 5, 0] }}
             transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-            className="text-white/50 group-hover:text-white/80 transition-colors duration-300 text-xs"
+            className="text-[#010101]/50 md:text-white/50 group-hover:text-[#010101]/80 md:group-hover:text-white/80 transition-colors duration-300 text-xs"
           >
             ↓
           </motion.span>

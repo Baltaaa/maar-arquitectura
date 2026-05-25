@@ -4,7 +4,7 @@ import { siteContent } from '../../data/content'
 
 export const Manifiesto = () => {
   return (
-    <section className="bg-[#0A0A0A] py-14 md:py-24 lg:py-32 px-6 md:px-16 ">
+    <section className="bg-[#0A0A0A] py-14 md:py-24 lg:py-32 px-6 md:px-16 select-none">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12">
           <ScrollReveal delay={0}>
