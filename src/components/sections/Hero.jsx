@@ -7,7 +7,7 @@ export const Hero = () => {
   }
 
   return (
-    <section className="relative select-none h-[90vh] md:h-screen min-h-[300px] max-h-[750px] flex flex-col justify-end overflow-hidden md:m-16 md:mb-10 md:mt-0 p-1 rounded-t-md md:rounded-md md:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.5)]">
+    <section className="relative select-none h-[90vh] md:h-screen min-h-[250px] max-h-[750px] flex flex-col justify-end overflow-hidden md:m-16 md:mb-10 md:mt-0 p-1 rounded-t-[15px] md:rounded-[15px] md:shadow-[0_20px_80px_-20px_rgba(0,0,0,0.5)]">
 
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">

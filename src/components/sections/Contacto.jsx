@@ -6,7 +6,7 @@ export const Contacto = () => {
   return (
     <section
       id="contacto"
-      className="bg-[#0A0A0A] py-20 md:py-28 px-10 md:px-16 border-t border-white/10 relative overflow-hidden m-4 mb-12 md:m-16 md:mb-12 md:mt-0 p-1 rounded-md md:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.5)]"
+      className="bg-[#0A0A0A] py-20 md:py-28 px-10 md:px-16 border-t border-white/10 relative overflow-hidden m-4 mb-12 md:m-16 md:mb-12 md:mt-0 p-1 rounded-[15px] md:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.5)]"
     >
       {/* Decorative background element — Logo grande semitransparente */}
       <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">

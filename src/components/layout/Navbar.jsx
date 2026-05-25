@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed md:sticky top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-16 py-5 bg-background/60 md:bg-background/70 border-b-black/20 border-b md:border-none backdrop-blur-md">
+    <header className="fixed md:sticky top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-16 py-2 bg-background/60 md:bg-background/70 border-b-black/20 border-b md:border-none backdrop-blur-md">
       {/* Logo */}
       <div className="flex items-center gap-2.5">
         <img
